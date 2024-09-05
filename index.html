@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Cliente</h1>
+        <legend>Preencha todos os dados a seguir e em 24 horas iremos responder.</legend>
+        <form action="#" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" pattern="[A-Za-z]+" title="Por favor, insira apenas letras." required>
+                </div>
+                <div class="form-group">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" class="form-control" placeholder="Sobrenome" pattern="[A-Za-z]+" title="Por favor, insira apenas letras." required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="cargo">Cargo:</label>
+                <select id="cargo" name="cargo" class="form-control" required>
+                    <option value="">Selecione</option>
+                    <option value="gerente">Gerente</option>
+                    <option value="supervisor">Supervisor</option>
+                    <option value="vendas">Vendas</option>
+                    <option value="atendimento">Atendimento</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Sexo:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" id="masculino" name="genero" value="Masculino" required>
+                        Masculino
+                    </label>
+                    <label>
+                        <input type="radio" id="feminino" name="genero" value="Feminino" required>
+                        Feminino
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" class="form-control" required>
+            </div>
+
+            <div class="form-sobre-voce">
+                <label for="sobre-voce">Fale sobre você:</label>
+                <textarea id="sobre-voce" name="sobre-voce" rows="5" class="form-control" maxlength="200"></textarea>
+            </div>
+
+            <div class="form-cadrasto">
+                <button type="submit" class="btn-submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
